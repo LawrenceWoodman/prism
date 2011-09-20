@@ -17,6 +17,7 @@
 ##    --vcard                   Get hCard as a vCard
 ##    --xfn                     Get XFN URLs
 ##    --hreview                 Get hReviews
+##    --hreview-aggregate       Get hReview-aggregates
 ##
 ## Other Options:
 ##    -h, --help                show this help message
@@ -65,6 +66,7 @@ ARGV.options do |option|
   option.on('--vcard') { options << :vcard }
   option.on('--xfn') { options << :xfn }
   option.on('--hreview') { options << :hreview }
+  option.on('--hreview-aggregate') { options << :hreviewaggregate }
   option.on_tail('-h','--help') { puts usage ; exit }
   option.on_tail('-v','--version') { puts Prism::VERSION ; exit }
   option.parse!

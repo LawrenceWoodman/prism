@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mark Wunsch"]
-  s.date = %q{2011-06-15}
+  s.date = %q{2011-09-20}
   s.description = %q{A Ruby microformat parser and HTML toolkit powered by Nokogiri}
   s.email = ["mark@markwunsch.com"]
   s.executables = ["prism"]
@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
     "lib/prism/microformat/hcalendar.rb",
     "lib/prism/microformat/hcard.rb",
     "lib/prism/microformat/hreview.rb",
+    "lib/prism/microformat/hreviewaggregate.rb",
     "lib/prism/microformat/rellicense.rb",
     "lib/prism/microformat/reltag.rb",
     "lib/prism/microformat/votelinks.rb",
@@ -57,6 +58,11 @@ Gem::Specification.new do |s|
     "test/fixtures/hreview/hreview3b.html",
     "test/fixtures/hreview/hreview4.html",
     "test/fixtures/hreview/hreview5.html",
+    "test/fixtures/hreviewaggregate/hreviewaggregate1.html",
+    "test/fixtures/hreviewaggregate/hreviewaggregate2.html",
+    "test/fixtures/hreviewaggregate/hreviewaggregate3.html",
+    "test/fixtures/hreviewaggregate/hreviewaggregate3a.html",
+    "test/fixtures/hreviewaggregate/hreviewaggregate3b.html",
     "test/fixtures/huffduffer.html",
     "test/fixtures/likeorhate.html",
     "test/fixtures/rel_license.html",
@@ -102,6 +108,7 @@ Gem::Specification.new do |s|
     "test/microformat/hcalendar_test.rb",
     "test/microformat/hcard_test.rb",
     "test/microformat/hreview_test.rb",
+    "test/microformat/hreviewaggregate_test.rb",
     "test/microformat/rellicense_test.rb",
     "test/microformat/reltag_test.rb",
     "test/microformat/votelinks_test.rb",

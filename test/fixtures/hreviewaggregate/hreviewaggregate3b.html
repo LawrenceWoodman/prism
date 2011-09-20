@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>hReview-aggregate 3b - Extracting item photo test without url</title>
+</head>
+<body>
+
+  <div class="test-fixture">
+
+    <h1 class="summary">hReview-aggregate 3b - Extracting item photo test without url</h1>
+    <p class="description">This page was designed to test the extraction of an item <em>photo</em> without <em>url</em>
+    from an hReview-aggregate.  It is tested to make sure it can be extracted separately because of an earlier implementation bug that affected hReview and could potentially affect hReview-aggregate.</p>
+    <p>Inspired by: <a href="http://ufxtract.com/testsuite/">Glenn Jones' Microformat Test Suite</a></p>
+
+    <p class="author vcard">
+      Author: <a class="url fn" href="http://techtinkering.com">Lawrence Woodman</a>
+      (<a class="org url" href="http://vlifesystems.com/">vLife Systems</a>)
+    </p>
+
+    <h2>Tests</h2>
+    <table id="assetTable">
+    <thead>
+      <tr>
+        <th>Test</th>
+        <th>Result</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="assert">
+        <td class="test">hreviewaggregate[0].item.photo</td>
+        <td class="result">IsEqualTo("http://example.com/photos/crepes.png")</td>
+        <td class="comment">photo is a singular value</td>
+      </tr>
+    </tbody>
+    </table>
+
+
+    <h2>History</h2>
+    <ul>
+      <li class="history vevent">
+        <span class="summary">Created</span>: <abbr class="dtstart" title="2011-09-20">20 September 2011</abbr>
+        <span class="description">by Lawrence Woodman</span>
+      </li>
+    </ul>
+
+  </div>
+
+  <div>
+    <h2>hReview-aggregate</h2>
+    This review was adapted from: <a href="http://microformats.org/wiki/hreview#Restaurant_reviews">http://microformats.org/wiki/hreview#Restaurant_reviews</a>
+
+    <div class="hreview-aggregate">
+      <div class="item">
+        <h2 class="fn">Crepes on Cole</h2>
+        <img class="photo" src="http://example.com/photos/crepes.png" />
+      </div>
+
+      <h4 class="summary">Crepes on Cole is awesome</h4>
+      Rated <span><span class="rating">5</span> out of 5</span>
+      based on <span class="votes">6</span> ratings
+      and <span class="count">3</span> reviews.
+    </div>
+
+  </div>
+
+</body>
+
+</html>

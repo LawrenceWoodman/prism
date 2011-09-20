@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>hReview-aggregate 1 - Single occurence test</title>
+</head>
+<body>
+
+  <div class="test-fixture">
+
+    <h1 class="summary">hReview-aggregate 1 - Single occurrence test</h1>
+    <p class="description">This page was designed to test that values of a hReview-aggregate which are meant to have only a single occurrence are parsed correctly.</p>
+    <p>Inspired by: <a href="http://ufxtract.com/testsuite/">Glenn Jones' Microformat Test Suite</a></p>
+
+    <p class="author vcard">
+      Author: <a class="url fn" href="http://techtinkering.com">Lawrence Woodman</a>
+      (<a class="org url" href="http://vlifesystems.com/">vLife Systems</a>)
+    </p>
+
+    <h2>Tests</h2>
+    <table id="assetTable">
+    <thead>
+      <tr>
+        <th>Test</th>
+        <th>Result</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="assert">
+        <td class="test">hreviewaggregate[0].summary</td>
+        <td class="result">IsEqualTo("Crepes on Cole is awesome")</td>
+        <td class="comment">summary is a singular value</td>
+      </tr>
+      <tr class="assert">
+        <td class="test">hreviewaggregate[0].rating</td>
+        <td class="result">IsEqualTo("5")</td>
+        <td class="comment">rating is a singular value</td>
+      </tr>
+      <tr class="assert">
+        <td class="test">hreviewaggregate[0].count</td>
+        <td class="result">IsEqualTo("3")</td>
+        <td class="comment">count is a singular value</td>
+      </tr>
+      <tr class="assert">
+        <td class="test">hreviewaggregate[0].votes</td>
+        <td class="result">IsEqualTo("6")</td>
+        <td class="comment">votes is a singular value</td>
+      </tr>
+      <tr class="assert">
+        <td class="test">hreviewaggregate[0].item</td>
+        <td class="result">HasProperty(true)</td>
+        <td class="comment">item is a singular value</td>
+      </tr>
+    </tbody>
+    </table>
+
+
+    <h2>History</h2>
+    <ul>
+      <li class="history vevent">
+        <span class="summary">Created</span>: <abbr class="dtstart" title="2011-09-11">11 September 2011</abbr>
+        <span class="description">by Lawrence Woodman</span>
+      </li>
+    </ul>
+
+  </div>
+
+  <div>
+    <h2>hReview-aggregate</h2>
+    This was adapted from: <a href="http://microformats.org/wiki/hreview#Restaurant_reviews">http://microformats.org/wiki/hreview#Restaurant_reviews</a>
+
+    <div class="hreview-aggregate">
+      <div class="item vcard">
+        <h2 class="fn org">Crepes on Cole</h2>
+        <span class="adr"><span class="locality">San Francisco</span></span><br />
+        <em><abbr class="type" title="business">Creperie</abbr></em>
+      </div>
+      <h4 class="summary">Crepes on Cole is awesome</h4>
+      Rated <span><span class="rating">5</span> out of 5</span>
+      based on <span class="votes">6</span> ratings
+      and <span class="count">3</span> reviews.
+    </div>
+  </div>
+
+</body>
+
+</html>
